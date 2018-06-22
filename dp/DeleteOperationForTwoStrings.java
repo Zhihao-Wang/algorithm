@@ -1,5 +1,8 @@
+package dp;
+
 import org.junit.Test;
 //删除两个字符串的字符使它们相等
+//思路：两字符串总长-2倍最长公共字串LCS  即为删除的最小步数
 public class DeleteOperationForTwoStrings {
     public int minDistance(String word1, String word2) {
         int m = word1.length(), n = word2.length();
