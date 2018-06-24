@@ -2,7 +2,7 @@ package heapSort;
 
 import org.junit.Test;
 
-public class Main {
+public class FindRabbit {
     /**
      * 堆调整算法
      *
