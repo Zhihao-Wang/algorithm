@@ -10,7 +10,7 @@ import java.util.List;
 public class ReadTxt {
     @Test
     public void read() throws IOException{
-        FileInputStream fis = new FileInputStream("E:/6-27.txt");
+        FileInputStream fis = new FileInputStream("E:/7-20.txt");
         List<String> list = new ArrayList<String>();
         InputStreamReader isr  = new InputStreamReader(fis, "UTF-8");
         BufferedReader br = new BufferedReader(isr);
