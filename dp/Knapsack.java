@@ -22,21 +22,21 @@ public class Knapsack {
     public int knapsack(int Capacity, int N, int[] weights, int[] values) {
         int[] dp = new int[Capacity + 1];
         //01背包
-        for (int i = 1; i <= N; i++) {
-            int w = weights[i - 1], v = values[i - 1];
-            for (int j = Capacity; j >= 1; j--) {
-                if (j >= w) {
-                    dp[j] = Math.max(dp[j], dp[j - w] + v);
-                }
-            }
-        }
-        //完全背包
-//        for(int i=0;i<N;i++){
-//            int w = weights[i], v = values[i];
-//            for(int j=w;j<=Capacity;j++){
-//                dp[j]=Math.max(dp[j],dp[j-w]+v);
+//        for (int i = 1; i <= N; i++) {
+//            int w = weights[i - 1], v = values[i - 1];
+//            for (int j = Capacity; j >= 1; j--) {
+//                if (j >= w) {
+//                    dp[j] = Math.max(dp[j], dp[j - w] + v);
+//                }
 //            }
 //        }
+//        完全背包
+        for(int i=0;i<N;i++){
+            int w = weights[i], v = values[i];
+            for(int j=w;j<=Capacity;j++){
+                dp[j]=Math.max(dp[j],dp[j-w]+v);
+            }
+        }
         return dp[Capacity];
     }
     @Test
