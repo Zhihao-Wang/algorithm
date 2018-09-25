@@ -2,6 +2,8 @@ package dp;
 
 import org.junit.Test;
 
+
+
 public class Knapsack {
     //    public int knapsack(int W, int N, int[] weights, int[] values) {
 //        int[][] dp = new int[N + 1][W + 1];
@@ -47,4 +49,7 @@ public class Knapsack {
         int[] values = {4, 2, 6, 7, 6};
         System.out.println(knapsack(Capacity, n, weights, values));
     }
+
+
+
 }

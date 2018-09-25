@@ -2,11 +2,12 @@ package tree;
 
 public class TreeNode {
 
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
-            val = x;
+    int val;
+    public TreeNode left=null;
+    public TreeNode right=null;
+
+    TreeNode(int x) {
+        val = x;
 
     }
 }

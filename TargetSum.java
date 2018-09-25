@@ -11,7 +11,8 @@ public class TargetSum {
         for (int num : nums) {
             for (int i = W; i >= 0; i--) {
                 if (num <= i) {
-                    dp[i] = dp[i] + dp[i - num];//PatitionEqual字串的升级版，方法一样
+                    dp[i] = dp[i] + dp[i - num];
+                    //PatitionEqual字串的升级版，方法一样
                 }
             }
         }
